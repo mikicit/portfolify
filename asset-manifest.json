@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolify/static/css/main.79a318d8.css",
-    "main.js": "/portfolify/static/js/main.60408dda.js",
+    "main.css": "/portfolify/static/css/main.6798bd40.css",
+    "main.js": "/portfolify/static/js/main.4e50282f.js",
     "service-worker.js": "/portfolify/service-worker.js",
     "static/media/kitten.png": "/portfolify/static/media/kitten.ecc760b5d2fbacdfad97.png",
     "static/media/logo.svg": "/portfolify/static/media/logo.acb383f056fc76fe42302f9eb2e01326.svg",
@@ -9,11 +9,11 @@
     "static/media/delete.svg": "/portfolify/static/media/delete.eac1a29b0fcadff53187f5785f9353f0.svg",
     "static/media/add.svg": "/portfolify/static/media/add.a31034ddc7668247b597fe5c1adad7ae.svg",
     "static/media/expand-more.svg": "/portfolify/static/media/expand-more.e67dbe243b6a40aaac93a3e7a7c5e29f.svg",
-    "main.79a318d8.css.map": "/portfolify/static/css/main.79a318d8.css.map",
-    "main.60408dda.js.map": "/portfolify/static/js/main.60408dda.js.map"
+    "main.6798bd40.css.map": "/portfolify/static/css/main.6798bd40.css.map",
+    "main.4e50282f.js.map": "/portfolify/static/js/main.4e50282f.js.map"
   },
   "entrypoints": [
-    "static/css/main.79a318d8.css",
-    "static/js/main.60408dda.js"
+    "static/css/main.6798bd40.css",
+    "static/js/main.4e50282f.js"
   ]
 }
