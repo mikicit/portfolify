@@ -13,4 +13,5 @@ The project enables users to create watchlists and add stocks for tracking purpo
 
 The project utilizes React, TypeScript, Redux, and Redux-Saga. It also incorporates SCSS and SCSS modules for styling. Additionally, the project has offline functionality through the use of a service worker. The Polygon API is employed to retrieve and update stock data. User state persistence is achieved using LocalStorage.
 
-## Some Screenshots
+## Screenshots
+

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './App.module.scss';
 
 // Layout
@@ -13,7 +13,6 @@ interface TabType {
 }
 
 const App: React.FC = () => {
-    const dispatch = useAppDispatch();
     const [activeTab, setActiveTab] = useState('watchlists');
 
     const tabs: TabType[] = [
