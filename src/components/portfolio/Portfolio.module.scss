@@ -1,0 +1,97 @@
+@import "../../variables";
+
+.content {
+  margin-top: $space-6;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  margin-top: $space-4;
+}
+
+.tableItems {
+  margin-top: $space-3;
+  & > article {
+    &:not(:first-child) {
+      margin-top: $space-2;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  padding: 0 $space-2;
+}
+
+.symbolHeaderLayout {
+  flex-grow: 0;
+  padding: 0 $space-2;
+}
+
+.symbolHeader {
+  display: inline-block;
+  width: 60px;
+}
+
+.headerButtons {
+  display: none;
+  visibility: hidden;
+}
+
+.headerTitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black-light-color;
+  white-space: nowrap;
+}
+
+.nameHeaderLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.priceHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.quantityHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.changeHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.valueHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.buttonsHeaderLayout {
+  flex-grow: 1;
+  padding: 0 $space-2;
+}
+
+.footer {
+  margin-top: $space-5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

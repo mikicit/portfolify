@@ -1,0 +1,185 @@
+@import "../../variables";
+
+.content {
+  margin-top: $space-6;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  margin-top: $space-4;
+}
+
+.tableItems {
+  margin-top: $space-3;
+  & > .item {
+    &:not(:first-child) {
+      margin-top: $space-2;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  padding: 0 $space-2;
+}
+
+.symbolHeaderLayout {
+  flex-grow: 0;
+  padding: 0 $space-2;
+}
+
+.symbolHeader {
+  display: inline-block;
+  width: 60px;
+}
+
+.headerButtons {
+  display: none;
+  visibility: hidden;
+}
+
+.headerTitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black-light-color;
+  white-space: nowrap;
+}
+
+.nameHeaderLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.priceHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.changeHeaderLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.buttonsHeaderLayout {
+  flex-grow: 1;
+  padding: 0 $space-2;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  border-bottom: 1px solid $gray-normal-color;
+  padding: $space-2;
+  box-shadow: $shadow-1;
+}
+
+.symbolLayout {
+  flex-grow: 0;
+  padding: 0 $space-2;
+}
+
+.symbol {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  background-color: $black-normal-color;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.parameter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+}
+
+.nameLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+.priceLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.changeLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.negativeChange {
+  color: $red-normal-color;
+}
+
+.positiveChange {
+  color: $green-normal-color;
+}
+
+.buttonsLayout {
+  flex-grow: 1;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 $space-2;
+}
+
+.button {
+  background: $gray-light-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+  & > svg {
+    fill: $black-normal-color;
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    background: $gray-normal-color;
+  }
+
+  &:active {
+    background: $gray-dark-color;
+  }
+}
+
+.footer {
+  margin-top: $space-5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

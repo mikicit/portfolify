@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.tab {
+  background-color: $gray-normal-color;
+  color: $black-normal-color;
+  border: 0;
+  border-radius: 100px;
+  padding: 0 $space-4;
+  height: 32px;
+  cursor: pointer;
+  margin-left: $space-2;
+}
+
+.active {
+  background-color: $primary-light-color;
+  color: $primary-dark-color;
+}

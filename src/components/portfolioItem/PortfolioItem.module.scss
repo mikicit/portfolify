@@ -1,0 +1,256 @@
+@import "../../variables";
+
+// Item
+.item {
+  background: white;
+  border-radius: 8px;
+  border-bottom: 1px solid $gray-normal-color;
+  padding: $space-2;
+  box-shadow: $shadow-1;
+}
+
+// Main
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.symbolLayout {
+  flex-grow: 0;
+  padding: 0 $space-2;
+}
+
+.symbol {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  background-color: $black-normal-color;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.parameter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+}
+
+.nameLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+.priceLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.quantityLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.changeLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.valueLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.buttonsLayout {
+  flex-grow: 1;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 $space-2;
+}
+
+.button {
+  background: $gray-light-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+  & + & {
+    margin-left: $space-2;
+  }
+  & > svg {
+    fill: $black-normal-color;
+    width: 16px;
+    height: 16px;
+    transition: transform 300ms;
+  }
+
+  &:hover {
+    background: $gray-normal-color;
+  }
+
+  &:active {
+    background: $gray-dark-color;
+  }
+
+  &.isExpanded {
+    & > svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// Purchases
+.purchases {
+  padding: $space-2 0;
+  margin: $space-2 $space-2 0;
+  border-top: $gray-normal-color  solid 1px;
+}
+
+.purchaseTableHeader {
+  display: flex;
+  align-items: center;
+  padding: $space-2 0;
+}
+
+.purchaseTableHeaderTitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black-light-color;
+  white-space: nowrap;
+}
+
+.purchaseTableHeaderDateLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderPriceLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderQuantityLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderChangeLayout {
+  flex-basis: 25%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderValueLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderButtonLayout {
+  flex-grow: 1;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 $space-2;
+}
+
+.purchaseTableHeaderButton{
+  display: none;
+  visibility: hidden;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+  padding: $space-2 0;
+  border-top: $gray-normal-color  solid 1px;
+}
+
+.emptyPurchases {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+.purchaseParameter {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+}
+
+.purchaseDateLayout {
+  flex-basis: 25%;
+  padding: 0 $space-2;
+}
+
+.purchasePriceLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseQuantityLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseChangeLayout {
+  flex-basis: 25%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseValueLayout {
+  flex-basis: 10%;
+  text-align: right;
+  padding: 0 $space-2;
+}
+
+.purchaseButtonLayout {
+  flex-grow: 1;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 $space-2;
+}
+
+.purchaseButton {
+  display: none;
+  visibility: hidden;
+}
+
+.negativeChange {
+  color: $red-normal-color;
+}
+
+.positiveChange {
+  color: $green-normal-color;
+}

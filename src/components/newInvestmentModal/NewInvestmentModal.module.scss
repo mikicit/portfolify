@@ -1,0 +1,137 @@
+@import "../../variables";
+
+// Modal
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.content {
+  background-color: #fff;
+  padding: $space-6 $space-5;
+  border-radius: 16px;
+  box-shadow: $shadow-3;
+  width: 100%;
+  max-width: 600px;
+  z-index: 200;
+}
+
+.header {
+  margin-bottom: $space-4;
+}
+
+.heading {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: $black-normal-color;
+}
+
+.footer {
+  margin-top: $space-4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $space-4;
+}
+
+// Search Input
+
+.searchInput {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid $gray-dark-color;
+  width: 100%;
+  padding: 0 $space-3;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $black-normal-color;
+  font-family: inherit;
+}
+
+// Recommendations
+.recommendations {
+  overflow-y: scroll;
+  max-height: 300px;
+  margin-top: $space-4;
+  padding-right: $space-4;
+}
+
+.recommendationsNotFound {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+  margin: 0;
+}
+
+// Investment
+.investment {
+  display: flex;
+  align-items: center;
+  padding: $space-2 $space-3;
+  border-radius: 4px;
+  border: 1px solid $gray-dark-color;
+  & + & {
+    margin-top: $space-2;
+  }
+}
+
+.investmentSymbolLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.investmentSymbol {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  background-color: $black-normal-color;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.investmentName {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-normal-color;
+  margin: 0 0 0 $space-2;
+  flex-grow: 1;
+}
+
+.investmentButton {
+  margin-left: $space-2;
+}
+
+// Selected Investment
+.selectedInvestment {
+  margin-bottom: $space-4;
+}

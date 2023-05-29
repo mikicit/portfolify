@@ -1,0 +1,56 @@
+@import "../../variables";
+
+@keyframes rockingAnimation {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.container {
+  margin: $space-5 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 256px;
+  margin: 0 auto;
+  display: block;
+  transform-origin: bottom center;
+  animation: rockingAnimation 2s infinite ease-in-out;
+}
+
+.description {
+  width: fit-content;
+  margin: $space-5 auto 0 auto;
+  background-color: white;
+  padding: $space-4 $space-5;
+  border-radius: $space-2;
+  max-width: 600px;
+  border-bottom: 1px solid $gray-normal-color;
+  box-shadow: $shadow-1;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: $black-normal-color;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: $space-5;
+  margin-bottom: $space-2 * -1;
+  margin-left: $space-2 * -1;
+  & > * {
+    margin-bottom: $space-2;
+    margin-left: $space-2
+  }
+}

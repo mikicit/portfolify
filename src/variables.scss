@@ -1,0 +1,45 @@
+// Colors
+// Primary
+$primary-light-color: #B6E2CF;
+$primary-normal-color: #48A67E;
+$primary-dark-color: #2D7255;
+
+// Black
+$black-light-color: #575E64;
+$black-normal-color: #333A40;
+
+// Gray
+$gray-light-color: #F7F7F8;
+$gray-normal-color: #E4E4E7;
+$gray-dark-color: #C7C7D1;
+
+// Red
+$red-normal-color: #CC6464;
+$red-dark-color: #BA3838;
+
+// Green
+$green-normal-color: $primary-normal-color;
+
+// Spaces
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 24px;
+$space-6: 32px;
+$space-7: 48px;
+$space-8: 64px;
+
+// Shadows
+$shadow-1: 0px 1px 4px rgba(32, 42, 62, 0.1);
+$shadow-2: 0px 2px 8px rgba(32, 42, 62, 0.1);
+$shadow-3: 0px 8px 24px rgba(32, 42, 62, 0.1);
+
+// Media Breakpoints
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);

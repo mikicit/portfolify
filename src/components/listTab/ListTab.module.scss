@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.tab {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 0;
+  border-bottom: 2px solid $gray-dark-color;
+  padding: 0 $space-3;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: $shadow-1;
+  margin-left: $space-2;
+  color: $black-normal-color;
+}
+
+.active {
+  border-bottom: 2px solid $primary-normal-color;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.quantity {
+  display: block;
+  background-color: $gray-normal-color;
+  border-radius: 100px;
+  color: $black-normal-color;
+  height: 16px;
+  min-width: 16px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 16px;
+  margin-left: $space-2;
+  padding: 0 $space-1;
+}

@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $space-2 * -1;
+  margin-top: $space-2 * -1;
+  & > button {
+    margin-top: $space-2;
+  }
+}
+
+.button {
+  margin-top: $space-2;
+  margin-left: $space-4;
+}
