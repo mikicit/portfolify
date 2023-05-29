@@ -65,6 +65,7 @@ const Watchlist: React.FC<WatchlistProps> = ({watchlist, onRemoveList}) => {
                     {watchlist.data.map((item) => (
                         <article className={styles.item} key={item.key}>
                             <div className={styles.symbolLayout}>
+                                <span className={styles.label}>Symbol:</span>
                                 <span className={styles.symbol} style={
                                     {backgroundColor: generateColorFromString(item.symbol)}
                                 }>
@@ -72,12 +73,15 @@ const Watchlist: React.FC<WatchlistProps> = ({watchlist, onRemoveList}) => {
                                 </span>
                             </div>
                             <div className={styles.nameLayout}>
+                                <span className={styles.label}>Name:</span>
                                 <h2 className={styles.name}>{item.name}</h2>
                             </div>
                             <div className={styles.priceLayout}>
+                                <span className={styles.label}>Price:</span>
                                 <span className={styles.parameter}>{item.price}</span>
                             </div>
                             <div className={styles.changeLayout}>
+                                <span className={styles.label}>Day gain:</span>
                                 <span className={cx(styles.parameter, {
                                     [styles.negativeChange]: item.change < 0,
                                     [styles.positiveChange]: item.change > 0

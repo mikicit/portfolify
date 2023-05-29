@@ -60,6 +60,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({portfolioKey, investment})
         <article className={styles.item} key={investment.key}>
             <div className={styles.main}>
                 <div className={styles.symbolLayout}>
+                    <span className={styles.label}>Symbol:</span>
                     <span className={styles.symbol} style={
                         {backgroundColor: generateColorFromString(investment.symbol)}
                     }>
@@ -67,15 +68,19 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({portfolioKey, investment})
                     </span>
                 </div>
                 <div className={styles.nameLayout}>
+                    <span className={styles.label}>Name:</span>
                     <h2 className={styles.name}>{investment.name}</h2>
                 </div>
                 <div className={styles.priceLayout}>
+                    <span className={styles.label}>Price:</span>
                     <span className={styles.parameter}>{investment.price}</span>
                 </div>
                 <div className={styles.quantityLayout}>
+                    <span className={styles.label}>Quantity:</span>
                     <span className={styles.parameter}>{totalQuantity}</span>
                 </div>
                 <div className={styles.changeLayout}>
+                    <span className={styles.label}>Day gain:</span>
                     <span className={cx(styles.parameter, {
                         [styles.negativeChange]: investment.change < 0,
                         [styles.positiveChange]: investment.change > 0
@@ -127,15 +132,19 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({portfolioKey, investment})
                             {investment.purchases.map((purchase) => (
                             <article className={styles.purchase} key={purchase.key}>
                                 <div className={styles.purchaseDateLayout}>
+                                    <span className={styles.label}>Purchase date:</span>
                                     <span className={styles.purchaseParameter}>{purchase.date}</span>
                                 </div>
                                 <div className={styles.purchasePriceLayout}>
+                                    <span className={styles.label}>Purchase price:</span>
                                     <span className={styles.purchaseParameter}>{purchase.price}</span>
                                 </div>
                                 <div className={styles.purchaseQuantityLayout}>
+                                    <span className={styles.label}>Quantity:</span>
                                     <span className={styles.purchaseParameter}>{purchase.quantity}</span>
                                 </div>
                                 <div className={styles.purchaseChangeLayout}>
+                                    <span className={styles.label}>Total gain:</span>
                                     <span className={cx(styles.purchaseParameter, {
                                         [styles.negativeChange]: calculatePurchaseChange(purchase) < 0,
                                         [styles.positiveChange]: calculatePurchaseChange(purchase) > 0
@@ -145,6 +154,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({portfolioKey, investment})
                                     </span>
                                 </div>
                                 <div className={styles.purchaseValueLayout}>
+                                    <span className={styles.label}>Value:</span>
                                     <span className={styles.purchaseParameter}>
                                         {calculatePurchaseValue(purchase).toFixed(2)}
                                     </span>

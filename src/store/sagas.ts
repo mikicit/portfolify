@@ -16,8 +16,6 @@ function* updateWatchlistsSaga(): Generator<any, void, any> {
                 continue;
             }
 
-            console.log('Updating watchlists...');
-
             for (const watchlist of state.watchlists.watchlists) {
                 for (const investment of watchlist.data) {
                     const r = yield call(polygonAPI.stocks.previousClose, investment.symbol);
@@ -63,8 +61,6 @@ function* updatePortfoliosSaga(): Generator<any, void, any> {
                 continue;
             }
 
-            console.log('Updating portfolios...');
-
             for (const portfolio of state.portfolios.portfolios) {
                 for (const investment of portfolio.data) {
                     const r = yield call(polygonAPI.stocks.previousClose, investment.symbol);
@@ -88,6 +84,7 @@ function* updatePortfoliosSaga(): Generator<any, void, any> {
                         };
 
                         yield put(updatePortfolioInvestment(updatedInvestment));
+                        yield put(updateLastUpdatePortfolios(new Date()));
                     } else {
                         console.error(`Error fetching previous close for ${investment.symbol}`);
                     }

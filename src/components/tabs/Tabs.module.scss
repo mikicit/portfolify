@@ -1,7 +1,15 @@
 @import "../../variables";
+@import "../../mixins";
 
 .tabs {
-    margin-top: $space-7;
+    margin-top: $space-5;
     display: flex;
     margin-left: $space-2 * -1;
+    flex-wrap: wrap;
+    @include media("lg") {
+        margin-top: $space-6;
+    }
+    @include media("xl") {
+        margin-top: $space-7;
+    }
 }

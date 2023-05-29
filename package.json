@@ -2,7 +2,7 @@
   "name": "portfolify",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://portfolify.mikita.dev",
+  "homepage": "https://mikicit.github.io/portfolify",
   "dependencies": {
     "@polygon.io/client-js": "^7.2.3",
     "@reduxjs/toolkit": "^1.9.5",
@@ -70,6 +70,7 @@
     "@types/node-sass": "^4.11.3",
     "@types/webpack-env": "^1.18.0",
     "file-loader": "^6.2.0",
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "webpack": "^5.84.1"
   }
 }

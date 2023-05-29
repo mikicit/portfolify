@@ -13,6 +13,13 @@
   box-shadow: $shadow-1;
   margin-left: $space-2;
   color: $black-normal-color;
+  transition: all 255ms;
+  &:hover {
+    border-bottom: 2px solid $primary-normal-color;
+  }
+  &:active {
+    background-color: $gray-light-color;
+  }
 }
 
 .active {

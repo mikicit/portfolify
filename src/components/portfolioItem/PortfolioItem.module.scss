@@ -1,23 +1,51 @@
 @import "../../variables";
+@import "../../mixins";
 
 // Item
 .item {
   background: white;
   border-radius: 8px;
   border-bottom: 1px solid $gray-normal-color;
-  padding: $space-2;
+  padding: $space-5 $space-2;
   box-shadow: $shadow-1;
+  @include media("lg") {
+    padding: $space-2;
+  }
 }
 
 // Main
 .main {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  @include media("lg") {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black-light-color;
+  white-space: nowrap;
+  margin-right: $space-2;
+  display: inline-block;
+  @include media("lg") {
+    display: none;
+  }
 }
 
 .symbolLayout {
   flex-grow: 0;
   padding: 0 $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    display: block;
+  }
 }
 
 .symbol {
@@ -42,6 +70,13 @@
 .nameLayout {
   flex-basis: 25%;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    margin: 0;
+    display: block;
+  }
 }
 
 .name {
@@ -56,24 +91,52 @@
   flex-basis: 10%;
   text-align: right;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    margin: 0;
+    display: block;
+  }
 }
 
 .quantityLayout {
   flex-basis: 10%;
   text-align: right;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    margin: 0;
+    display: block;
+  }
 }
 
 .changeLayout {
   flex-basis: 10%;
   text-align: right;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    margin: 0;
+    display: block;
+  }
 }
 
 .valueLayout {
   flex-basis: 10%;
   text-align: right;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+  @include media("lg") {
+    margin: 0;
+    display: block;
+  }
 }
 
 .buttonsLayout {
@@ -82,6 +145,10 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 $space-2;
+  margin-top: $space-2;
+  @include media("lg") {
+    margin: 0;
+  }
 }
 
 .button {
@@ -124,13 +191,18 @@
 .purchases {
   padding: $space-2 0;
   margin: $space-2 $space-2 0;
-  border-top: $gray-normal-color  solid 1px;
+  @include media("lg") {
+    border-top: $gray-normal-color solid 1px;
+  }
 }
 
 .purchaseTableHeader {
-  display: flex;
+  display: none;
   align-items: center;
   padding: $space-2 0;
+  @include media("lg") {
+    display: flex;
+  }
 }
 
 .purchaseTableHeaderTitle {
@@ -186,9 +258,14 @@
 
 .purchase {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: $space-2 0;
   border-top: $gray-normal-color  solid 1px;
+  @include media("lg") {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .emptyPurchases {
@@ -206,40 +283,62 @@
 }
 
 .purchaseDateLayout {
-  flex-basis: 25%;
-  padding: 0 $space-2;
+  @include media("lg") {
+    flex-basis: 25%;
+    padding: 0 $space-2;
+  }
 }
 
 .purchasePriceLayout {
-  flex-basis: 10%;
-  text-align: right;
-  padding: 0 $space-2;
+  margin-top: $space-1;
+  @include media("lg") {
+    flex-basis: 10%;
+    text-align: right;
+    padding: 0 $space-2;
+    margin: 0;
+  }
 }
 
 .purchaseQuantityLayout {
-  flex-basis: 10%;
-  text-align: right;
-  padding: 0 $space-2;
+  margin-top: $space-1;
+  @include media("lg") {
+    flex-basis: 10%;
+    text-align: right;
+    padding: 0 $space-2;
+    margin: 0;
+  }
 }
 
 .purchaseChangeLayout {
-  flex-basis: 25%;
-  text-align: right;
-  padding: 0 $space-2;
+  margin-top: $space-1;
+  @include media("lg") {
+    flex-basis: 25%;
+    text-align: right;
+    padding: 0 $space-2;
+    margin: 0;
+  }
 }
 
 .purchaseValueLayout {
-  flex-basis: 10%;
-  text-align: right;
-  padding: 0 $space-2;
+  margin-top: $space-1;
+  @include media("lg") {
+    flex-basis: 10%;
+    text-align: right;
+    padding: 0 $space-2;
+    margin: 0;
+  }
 }
 
 .purchaseButtonLayout {
-  flex-grow: 1;
-  flex-basis: 20%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 $space-2;
+  margin-top: $space-2;
+  @include media("lg") {
+    flex-grow: 1;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 $space-2;
+    margin: 0;
+  }
 }
 
 .purchaseButton {

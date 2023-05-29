@@ -9,6 +9,15 @@
   height: 32px;
   cursor: pointer;
   margin-left: $space-2;
+  transition: all 255ms;
+  &:hover {
+    background-color: $primary-light-color;
+    color: $primary-dark-color;
+  }
+  &:active {
+    background-color: $primary-normal-color;
+    color: $primary-dark-color;
+  }
 }
 
 .active {
